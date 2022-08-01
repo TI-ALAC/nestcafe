@@ -10,7 +10,6 @@ async function init() {
   const long = localStorage.getItem('long');
   console.log(long)
   //await getUser();
-  console.log(`http://localhost:5023/api/clima/${lat}/${long}`)
   const response = await axios.get(`http://localhost:5023/api/clima/${lat}/${long}`);
   const text_clima = response.data.data;
   //var cli = localStorage.getItem('climaFinal');
