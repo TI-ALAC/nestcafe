@@ -8,7 +8,7 @@ async function init() {
   const lat = localStorage.getItem('lat');
   const long = localStorage.getItem('long');
   //await getUser();
-  const response = await axios.get('http://localhost:5023/api/clima/'+ `${lat}` +'/'+`${long}`);
+  const response = await axios.get(`http://localhost:5023/api/clima/${lat}/${long}`);
   const text_clima = response.data.data;
   //var cli = localStorage.getItem('climaFinal');
   console.log("text_clima", text_clima)
