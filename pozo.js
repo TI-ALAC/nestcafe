@@ -42,7 +42,7 @@ async function init() {
       console.log("ingresando 5")
       content5.style.display = "block";
     }
-  }, 2000);
+  }, 20000);
 
 }
 
