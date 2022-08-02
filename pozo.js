@@ -5,8 +5,18 @@ var content4 = document.getElementById('contenido4');
 var content5 = document.getElementById('contenido5');
 
 async function init() {
+  
+  function success(pos) {
+    var crd = pos.coords;
+    localStorage.setItem("lon", crd.longitude);
+    localStorage.setItem("lat", crd.latitude);
+  };
 
-    await getClima();
+  function error(err) {
+    console.warn('ERROR(' + err.code + '): ' + err.message);
+  };
+
+  navigator.geolocation.getCurrentPosition(success, error);
     var latitud = localStorage.getItem("lon");
     var longitud = localStorage.getItem("lat");
     const response = await axios.get(`http://localhost:5023/api/clima/${latitud}/${longitud}`);
@@ -33,16 +43,5 @@ async function init() {
 
 init();
 
-async function getClima() {
-  function success(pos) {
-    var crd = pos.coords;
-    localStorage.setItem("lon", crd.longitude);
-    localStorage.setItem("lat", crd.latitude);
-  };
-
-  function error(err) {
-    console.warn('ERROR(' + err.code + '): ' + err.message);
-  };
-
-  navigator.geolocation.getCurrentPosition(success, error);
+function getClima() {
 }
