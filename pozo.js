@@ -3,30 +3,39 @@ var content2 = document.getElementById('contenido2');
 var content3 = document.getElementById('contenido3');
 var content4 = document.getElementById('contenido4');
 var content5 = document.getElementById('contenido5');
-var lat = 0;
-var lon = 0;
+
 async function init() {
 
-  //Pedir activación de ubicación
-  if (navigator.geolocation) navigator.geolocation.getCurrentPosition(function (pos) {
+  var options = {
+    enableHighAccuracy: true,
+    timeout: 5000,
+    maximumAge: 0
+  };
 
-    //Si es aceptada guardamos lo latitud y longitud
-    lat = pos.coords.latitude;
-    console.log(lat)
-    lon = pos.coords.longitude;
-    console.log(lon)
+  function success(pos) {
+    var crd = pos.coords;
+    localStorage.setItem("lon", crd.longitude);
+    localStorage.setItem("lat", crd.latitude);
+  };
 
-  }, function (error) {
+  function error(err) {
+    console.warn('ERROR(' + err.code + '): ' + err.message);
+  };
 
-    //Si es rechazada enviamos de error por consola
-    console.log('Ubicación no activada');
-  });
+  navigator.geolocation.getCurrentPosition(success, error, options);
 
+  var latitud = localStorage.getItem("lon");
+  console.log(latitud)
+  var longitud = localStorage.getItem("lat");
+  console.log(longitud)
+  const url = `http://localhost:5023/api/clima/${latitud}/${longitud}`;
+  console.log(url)
+  const response = await axios.get(`http://localhost:5023/api/clima/${latitud}/${longitud}`);
+  console.log(response)
 
   //const lat = sessionStorage.getItem('lat');
   //const long = sessionStorage.getItem('long');
   //await getUser();
-  const response = await axios.get(`http://localhost:5023/api/clima/${lat}/${lon}`);
   const text_clima = response.data.data;
   //var cli = localStorage.getItem('climaFinal');
   console.log("text_clima", text_clima)
