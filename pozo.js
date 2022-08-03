@@ -5,20 +5,10 @@ var content4 = document.getElementById('contenido4');
 var content5 = document.getElementById('contenido5');
 
 async function init() {
-  
-  function success(pos) {
-    var crd = pos.coords;
-    localStorage.setItem("lon", crd.longitude);
-    localStorage.setItem("lat", crd.latitude);
-  };
-
-  function error(err) {
-    console.warn('ERROR(' + err.code + '): ' + err.message);
-  };
-
-  navigator.geolocation.getCurrentPosition(success, error);
-    var latitud = localStorage.getItem("lon");
-    var longitud = localStorage.getItem("lat");
+    const panel = 1;
+    const coord = await http.getPanels(`http://localhost:3000/playlist/panel/${panel}`);
+    var latitud = coord[0].point.coordinates[0];
+    var longitud = coord[0].point.coordinates[1];
     const response = await axios.get(`http://localhost:5023/api/clima/${latitud}/${longitud}`);
     console.log(response)
     const text_clima = response.data.data;
@@ -42,6 +32,3 @@ async function init() {
 }
 
 init();
-
-function getClima() {
-}
