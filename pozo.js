@@ -2,6 +2,10 @@ var content3 = document.getElementById('contenido3');
 var content4 = document.getElementById('contenido4');
 var content5 = document.getElementById('contenido5');
 
+const URL = window.location.href;
+const province = URL.split("?province=")[1]
+console.log(province);
+
 async function init() {
   const coord = await axios.get(`https://apialacplayer.alacoohperu.pe/playlist/panel/17`);
   var latitud = coord.data.data[0].point.coordinates[0];
