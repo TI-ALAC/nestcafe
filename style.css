@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family: 'COCOGOOSE';
-    src: url(fonts/Cocogoose.otf);
+    font-family: 'myriad';
+    src: url(fonts/myriad.otf);
     font-weight: regular;
 }
 
@@ -27,8 +27,8 @@ img {
 
 #pozoUnidad {
     font-size: 122pt;
-    font-family: 'COCOGOOSE', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #2F4F4F;
+    font-family: 'myriad', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #FFF;
     left: 32%;
     top: 30%;
     position: absolute;
@@ -36,8 +36,8 @@ img {
 
 #millones{
     font-size: 122pt;
-    font-family: 'COCOGOOSE', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #2F4F4F;
+    font-family: 'myriad', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #FFF;
     left: 15%;
     top: 30%;
     position: absolute;
@@ -45,8 +45,8 @@ img {
 
 #date{
     font-size: 34pt;
-    font-family: 'COCOGOOSE', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #2F4F4F;
+    font-family: 'myriad', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #FFF;
     left: 5%;
     top: 66px;
     position: absolute;
@@ -56,8 +56,8 @@ img {
 @media only screen and (max-width: 800px) {
     #pozoUnidad {
         font-size: 68pt!important;
-        font-family: 'COCOGOOSE', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: #2F4F4F;
+        font-family: 'myriad', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #FFF;
         position: absolute;
         left: 33%;
         top: 31%;
@@ -66,8 +66,8 @@ img {
     }
     #millones{
         font-size: 68pt!important;
-        font-family: 'COCOGOOSE', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: #2F4F4F;    
+        font-family: 'myriad', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #FFF;    
         left: 21%;
         top: 31%;
         position: absolute;
@@ -75,8 +75,8 @@ img {
 
     #date{
         font-size: 19pt;
-        font-family: 'COCOGOOSE', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: #2F4F4F;
+        font-family: 'myriad', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #FFF;
         left: 5%;
         top: 54px;
         position: absolute;
@@ -87,8 +87,8 @@ img {
 @media only screen and (max-width: 768px) {
     #pozoUnidad {
         font-size: 67pt!important;
-        font-family: 'COCOGOOSE', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: #2F4F4F;
+        font-family: 'myriad', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #FFF;
         position: absolute;
         left: 33%;
         top: 31%;
@@ -96,8 +96,8 @@ img {
 
     #millones{
         font-size: 65pt!important;
-        font-family: 'COCOGOOSE', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: #2F4F4F;
+        font-family: 'myriad', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #FFF;
         left: 21%;
         top: 31%;
         position: absolute;
@@ -105,8 +105,8 @@ img {
 
     #date{
         font-size: 19pt;
-        font-family: 'COCOGOOSE', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: #2F4F4F;
+        font-family: 'myriad', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #FFF;
         left: 5%;
         top: 45px;
         position: absolute;
@@ -117,8 +117,8 @@ img {
 @media only screen and (max-width: 720px) {
     #pozoUnidad {
         font-size: 67pt!important;
-        font-family: 'COCOGOOSE', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: #2F4F4F;
+        font-family: 'myriad', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #FFF;
         left: 33%;
         top: 31%;
         position: absolute;
@@ -126,8 +126,8 @@ img {
 
     #millones{
         font-size: 65pt!important;
-        font-family: 'COCOGOOSE', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: #2F4F4F;
+        font-family: 'myriad', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #FFF;
         left: 21%;
         top: 31%;
         position: absolute;
@@ -135,8 +135,8 @@ img {
 
     #date{
         font-size: 19pt;
-        font-family: 'COCOGOOSE', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: #2F4F4F;
+        font-family: 'myriad', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #FFF;
         left: 5%;
         top: 40px;
         position: absolute;
