@@ -61,7 +61,7 @@ img {
         position: absolute;
         left: 33%;
         top: 31%;
-        letter-spacing: -10px;
+        letter-spacing: 1px;
 
     }
     #millones{
@@ -92,6 +92,7 @@ img {
         position: absolute;
         left: 33%;
         top: 31%;
+        letter-spacing: 1px;
     }
 
     #millones{
@@ -122,6 +123,7 @@ img {
         left: 33%;
         top: 31%;
         position: absolute;
+        letter-spacing: 1px;
     }
 
     #millones{
