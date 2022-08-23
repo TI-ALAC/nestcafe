@@ -20,8 +20,8 @@ async function init() {
   const palabraFecha = palabras[1];
   const unir = palabraDia + "," + palabraFecha;
   document.getElementById('date').innerHTML = unir;
-  document.getElementById('title1').innerHTML = result;
-  document.getElementById('pozoUnidad').innerHTML = '°C';
+  document.getElementById('title1').innerHTML = result+'°';
+  document.getElementById('pozoUnidad').innerHTML = 'C';
 
   if (text_clima == 'nubes' || text_clima == 'algo de nubes' || text_clima == 'niebla' || text_clima == 'muy nuboso' || text_clima == 'nubes dispersas') {
     content3.style.display = "block";

@@ -34,7 +34,7 @@ img {
     position: absolute;
 }
 
-#millones{
+#millones {
     font-size: 122pt;
     font-family: 'myriad', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #FFF;
@@ -43,7 +43,7 @@ img {
     position: absolute;
 }
 
-#date{
+#date {
     font-size: 34pt;
     font-family: 'myriad', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #FFF;
@@ -55,25 +55,26 @@ img {
 /* 800x420 */
 @media only screen and (max-width: 800px) {
     #pozoUnidad {
-        font-size: 68pt!important;
+        font-size: 75pt !important;
         font-family: 'myriad', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color: #FFF;
         position: absolute;
-        left: 33%;
-        top: 34%;
+        left: 37%;
+        top: 40%;
         letter-spacing: 1px;
-
     }
-    #millones{
-        font-size: 68pt!important;
+
+    #millones {
+        font-size: 120pt !important;
         font-family: 'myriad', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: #FFF;    
-        left: 21%;
-        top: 34%;
+        color: #FFF;
+        font-style: italic;
+        left: 8%;
+        top: 28%;
         position: absolute;
     }
 
-    #date{
+    #date {
         font-size: 19pt;
         font-family: 'myriad', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color: #FFF;
@@ -86,25 +87,26 @@ img {
 /* 768x384 */
 @media only screen and (max-width: 768px) {
     #pozoUnidad {
-        font-size: 67pt!important;
+        font-size: 75pt !important;
         font-family: 'myriad', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color: #FFF;
         position: absolute;
-        left: 33%;
-        top: 34%;
+        left: 37%;
+        top: 37%;
         letter-spacing: 1px;
     }
 
-    #millones{
-        font-size: 65pt!important;
+    #millones {
+        font-size: 120pt !important;
         font-family: 'myriad', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color: #FFF;
-        left: 21%;
-        top: 34%;
+        font-style: italic;
+        left: 8%;
+        top: 24%;
         position: absolute;
     }
 
-    #date{
+    #date {
         font-size: 19pt;
         font-family: 'myriad', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color: #FFF;
@@ -117,25 +119,27 @@ img {
 /* 720x360 */
 @media only screen and (max-width: 720px) {
     #pozoUnidad {
-        font-size: 67pt!important;
+        font-size: 75pt !important;
         font-family: 'myriad', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color: #FFF;
-        left: 33%;
-        top: 34%;
         position: absolute;
+        left: 37%;
+        top: 37%;
         letter-spacing: 1px;
     }
 
-    #millones{
-        font-size: 65pt!important;
+    #millones {
+        font-size: 110pt !important;
         font-family: 'myriad', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color: #FFF;
-        left: 21%;
-        top: 34%;
+        font-style: italic;
+        left: 8%;
+        top: 26%;
         position: absolute;
+    
     }
 
-    #date{
+    #date {
         font-size: 19pt;
         font-family: 'myriad', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color: #FFF;
