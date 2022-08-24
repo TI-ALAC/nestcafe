@@ -8,8 +8,8 @@ var Unidad = document.getElementById('pozoUnidad');
 
 const URL = window.location.href;
 const idPanel = URL.split("?idPanel=")[1]
-const province = URL.split("?province=")[2]
-console.log(province)
+const province = URL.split("?province=")[1]
+console.log(URL.split("?province="))
 document.getElementById("img-province-nublado").src="img/"+province+"/nublado.jpg"
 document.getElementById("img-province-soleado").src="img/"+province+"/Soleado.jpg"
 document.getElementById("img-province-lluvia").src="img/"+province+"/lluvia.jpg"
