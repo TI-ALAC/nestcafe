@@ -1,6 +1,10 @@
 var content3 = document.getElementById('contenido3');
 var content4 = document.getElementById('contenido4');
 var content5 = document.getElementById('contenido5');
+var dat = document.getElementById('date');
+var millon = document.getElementById('millones');
+var title = document.getElementById('title1');
+var Unidad = document.getElementById('pozoUnidad');
 
 const URL = window.location.href;
 const province = URL.split("?province=")[1]
@@ -10,9 +14,9 @@ async function init() {
   var latitud = coord.data.data[0].point.coordinates[0];
   var longitud = coord.data.data[0].point.coordinates[1];
   const response = await axios.get(`https://weatherstation.alacoohperu.pe/api/clima/${latitud}/${longitud}`);
-  const response2 = await axios.get(`https://weatherstation.alacoohperu.pe/api/climagrados/${latitud}/${longitud}`);
+  //const response2 = await axios.get(`https://weatherstation.alacoohperu.pe/api/climagrados/${latitud}/${longitud}`);
   const text_clima = response.data.data.weather[0].description;
-  const datatemp = response2.data.data.data_day.temperature_mean[6].toFixed(0);
+  const datatemp = response.data.data.main.temp.toFixed(0);
   const result = datatemp.toString();
   const fecha = new Date();
   const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
@@ -25,10 +29,15 @@ async function init() {
   document.getElementById('title1').innerHTML = result+'°';
   document.getElementById('pozoUnidad').innerHTML = 'C';
 
-  if (text_clima == 'nubes' || text_clima == 'algo de nubes' || text_clima == 'niebla' || text_clima == 'muy nuboso' || text_clima == 'nubes dispersas') {
+  if (text_clima == 'nubes'  || text_clima == 'niebla' || text_clima == 'muy nuboso' || text_clima == 'nubes dispersas') {
     content3.style.display = "block";
-  } else if (text_clima == 'cielo claro' ) {
+  } else if (text_clima == 'cielo claro' || text_clima == 'algo de nubes') {
     content4.style.display = "block";
+    dat.style.color = "#808080";
+    millon.style.color = "#808080";
+    title.style.color = "#808080";
+    Unidad.style.color = "#808080";
+    
   } else if (text_clima == 'lluvia ligera' || text_clima == 'tormenta con lluvia ligera') {
     content5.style.display = "block";
   }
