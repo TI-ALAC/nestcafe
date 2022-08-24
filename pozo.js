@@ -7,10 +7,14 @@ var title = document.getElementById('title1');
 var Unidad = document.getElementById('pozoUnidad');
 
 const URL = window.location.href;
-const province = URL.split("?province=")[1]
+const idPanel = URL.split("?idPanel=")[1]
+const province = URL.split("?province=")[2]
+document.getElementById("img-province-nublado").src="img/"+province+"/nublado.jpg"
+document.getElementById("img-province-soleado").src="img/"+province+"/Soleado.jpg"
+document.getElementById("img-province-lluvia").src="img/"+province+"/lluvia.jpg"
 
 async function init() {
-  const coord = await axios.get(`https://apialacplayer.alacoohperu.pe/playlist/panel/${province}`);
+  const coord = await axios.get(`https://apialacplayer.alacoohperu.pe/playlist/panel/${idPanel}`);
   var latitud = coord.data.data[0].point.coordinates[0];
   var longitud = coord.data.data[0].point.coordinates[1];
   const response = await axios.get(`https://weatherstation.alacoohperu.pe/api/clima/${latitud}/${longitud}`);
