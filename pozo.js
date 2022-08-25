@@ -34,9 +34,9 @@ async function init() {
   document.getElementById('title1').innerHTML = result+'°';
   document.getElementById('pozoUnidad').innerHTML = 'C';
 
-  if (text_clima == 'nubes'  || text_clima == 'niebla' || text_clima == 'muy nuboso' || text_clima == 'nubes dispersas') {
+  if (text_clima == 'nubes'  || text_clima == 'niebla' || text_clima == 'muy nuboso' ) {
     content3.style.display = "block";
-  } else if (text_clima == 'cielo claro' || text_clima == 'algo de nubes') {
+  } else if (text_clima == 'cielo claro' || text_clima == 'algo de nubes'|| text_clima == 'nubes dispersas') {
     content4.style.display = "block";
     dat.style.color = "#808080";
     millon.style.color = "#808080";
