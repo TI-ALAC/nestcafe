@@ -8,7 +8,9 @@ var Unidad = document.getElementById('pozoUnidad');
 
 const URL = window.location.href;
 const idPanel = URL.split("?idPanel=")[1]
-const province = URL.split("?province=")[1]
+const province = URL.split("?province=")[2]
+// const idPanel = 17
+// const province = "lima"
 console.log(URL.split("?province="))
 document.getElementById("img-province-nublado").src="img/"+province+"/nublado.jpg"
 document.getElementById("img-province-soleado").src="img/"+province+"/Soleado.jpg"
@@ -32,16 +34,11 @@ async function init() {
   const unir = palabraDia + "," + palabraFecha;
   document.getElementById('date').innerHTML = unir;
   document.getElementById('title1').innerHTML = result+'°';
-  document.getElementById('pozoUnidad').innerHTML = 'C';
 
   if (text_clima == 'nubes'  || text_clima == 'niebla' || text_clima == 'muy nuboso' ) {
     content3.style.display = "block";
   } else if (text_clima == 'cielo claro' || text_clima == 'algo de nubes'|| text_clima == 'nubes dispersas') {
     content4.style.display = "block";
-    dat.style.color = "#808080";
-    millon.style.color = "#808080";
-    title.style.color = "#808080";
-    Unidad.style.color = "#808080";
     
   } else if (text_clima == 'lluvia ligera' || text_clima == 'tormenta con lluvia ligera') {
     content5.style.display = "block";
