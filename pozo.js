@@ -7,11 +7,10 @@ var title = document.getElementById('title1');
 var Unidad = document.getElementById('pozoUnidad');
 
 const URL = window.location.href;
-const idPanel = URL.split("?idPanel=")[1]
-const province = "ecuador"
+const idPanel = 1
+const province = URL.split("?province=")[1]
 // const idPanel = 17
 // const province = "lima"
-console.log(URL.split("?idPanel="))
 console.log(URL.split("?province="))
 document.getElementById("img-province-nublado").src="img/"+province+"/nublado.jpg"
 document.getElementById("img-province-soleado").src="img/"+province+"/Soleado.jpg"
