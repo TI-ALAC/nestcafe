@@ -9,6 +9,20 @@
     font-weight: regular;
 }
 
+#contenido3{
+    background-color: black;
+}
+
+#contenido4{
+    background-color: black;
+}
+
+#contenido5{
+    background-color: black;
+}
+#contenido6{
+    background-color: black;
+}
 img {
     object-fit: fill;
     position: absolute;
