@@ -11,6 +11,7 @@ const idPanel = URL.split("?idPanel=")[1]
 const province = URL.split("?province=")[2]
 // const idPanel = 17
 // const province = "lima"
+console.log(URL.split("?idPanel="))
 console.log(URL.split("?province="))
 document.getElementById("img-province-nublado").src="img/"+province+"/nublado.jpg"
 document.getElementById("img-province-soleado").src="img/"+province+"/Soleado.jpg"
