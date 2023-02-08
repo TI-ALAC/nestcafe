@@ -8,7 +8,7 @@ var Unidad = document.getElementById('pozoUnidad');
 
 const URL = window.location.href;
 const idPanel = 1
-const province = URL.split("?province=")[1]
+const province = "ecuador"
 // const idPanel = 17
 // const province = "lima"
 console.log(URL.split("?province="))
@@ -40,7 +40,7 @@ async function init() {
   } else if (text_clima == 'cielo claro' || text_clima == 'algo de nubes'|| text_clima == 'nubes dispersas') {
     content4.style.display = "block";
     
-  } else if (text_clima == 'lluvia ligera' || text_clima == 'tormenta con lluvia ligera') {
+  } else if (text_clima == 'lluvia ligera' || text_clima == 'tormenta con lluvia ligera'|| text_clima == 'lluvia moderada') {
     content5.style.display = "block";
   }
 
