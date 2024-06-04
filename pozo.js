@@ -8,7 +8,7 @@ var Unidad = document.getElementById('pozoUnidad');
 
 const URL = window.location.href;
 const idPanel = 1
-const province = "ecuador"
+const province = URL.split("?province=")[1]
 // const idPanel = 17
 // const province = "lima"
 console.log(URL.split("?province="))
