@@ -25,7 +25,7 @@ async function init() {
   // const text_clima = response.data.data.weather[0].description;
   const text_clima = 'nubes';
   // const datatemp = response.data.data.main.temp.toFixed(0);
-  const result = datatemp.toString();
+  //const result = datatemp.toString();
   const fecha = new Date();
   const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
   const dateEs = fecha.toLocaleDateString('es-ES', options);
